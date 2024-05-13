@@ -3,6 +3,6 @@ const setDrink = (section) => {
         const id = e.target.parentElement.dataset.id;
         localStorage.setItem("drink", id);
     });
-
-    export default setDrink;
 }
+
+export default setDrink;
