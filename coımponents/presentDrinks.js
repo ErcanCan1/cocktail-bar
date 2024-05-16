@@ -3,13 +3,15 @@ import displayDrinks from "./displayDrinks.js";
 import setDrink from "./setDrink.js";
 
 const showDrinks = async (url) => {
-  
+    // fetch drinks
     const data = await fetchDrinks(url);
-    const section = await displayDrinks(data);
-    if(section)  {
-        setDrink(section);
-    }
   
-};
-
-export default showDrinks;
+    // display drinks
+    const section = await displayDrinks(data);
+    if (section) {
+      setDrink(section);
+    }
+  };
+  
+  export default showDrinks;
+  
